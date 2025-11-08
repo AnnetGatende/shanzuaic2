@@ -182,7 +182,8 @@
                     <div class="row">
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
-                                 <ul
+                             <ul
+  class="contact-list"
   style="
     list-style: none;
     padding: 0;
@@ -212,11 +213,7 @@
     >
       <i
         class="fa fa-phone"
-        style="
-          font-size: 18px;
-          margin-right: 6px;
-          color: inherit;
-        "
+        style="font-size: 18px; margin-right: 6px; color: inherit;"
       ></i>
       0722285104
     </a>
@@ -234,23 +231,53 @@
         color: #001f3f;
         font-weight: 600;
         transition: all 0.3s ease;
-        word-break: break-all;
+        word-break: break-word;
+        text-align: center;
       "
       onmouseover="this.style.color='#007bff'; this.style.transform='scale(1.1)'"
       onmouseout="this.style.color='#001f3f'; this.style.transform='scale(1)'"
     >
       <i
         class="fa fa-envelope"
-        style="
-          font-size: 18px;
-          margin-right: 6px;
-          color: inherit;
-        "
+        style="font-size: 18px; margin-right: 6px; color: inherit;"
       ></i>
       Ke761aicshanzucdc@gmail.com
     </a>
   </li>
 </ul>
+
+<style>
+  /* --- Responsive fix for small screens --- */
+  @media (max-width: 800px) {
+    .contact-list {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 10px !important;
+      padding: 10px 0 !important;
+    }
+
+    .contact-list li a {
+      font-size: 15px !important;
+      flex-wrap: wrap !important;
+      text-align: center !important;
+      line-height: 1.3;
+    }
+
+    .contact-list li {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contact-list li a {
+      font-size: 14px !important;
+      word-break: break-all;
+    }
+  }
+</style>
+
 
                             </div>
                         </div>
@@ -277,11 +304,19 @@
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="images/Logo.png.png" alt="AIC Shanzu">
-                                </a>
-                            </div>
+                                                       <div class="logo" style="display: flex; align-items: center; padding: 5px;">
+    <a href="index.html" style="display: inline-block; line-height: 0;">
+        <img src="images/Logo.png.png" alt="Church Logo" 
+             style="width: 55px; 
+                    height: 55px; 
+                    border-radius: 50%; 
+                    object-fit: cover; 
+                    border: 3px solid #ffffff; 
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+                    transition: transform 0.3s ease;
+                    display: block;">
+    </a>
+</div>
                         </div>
                         <div class="col-xl-9 col-lg-9">
                             <div class="main-menu">
@@ -414,58 +449,59 @@
                 </div>
             </div>
             
-            <!-- Age Groups Section -->
-            <div class="row mt-5">
-                <div class="col-12">
-                    <h3 class="text-center mb-4" style="color:#001f3f; font-size:28px;">Age Groups & Classes</h3>
-                    <div class="row">
-                        <div class="col-md-3 mb-4">
-                            <div class="age_group text-center" style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); height:100%;">
-                                <h4 style="color:#001f3f; font-size:20px; margin-bottom:15px;">Nursery (0-3)</h4>
-                                <p style="color:#555; margin-bottom:15px;">Loving care with simple Bible stories and songs</p>
-                                <ul style="text-align:left; color:#555;">
-                                    <li>Supervised play</li>
-                                    <li>Simple Bible songs</li>
-                                    <li>Age-appropriate stories</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="age_group text-center" style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); height:100%;">
-                                <h4 style="color:#001f3f; font-size:20px; margin-bottom:15px;">Pre-School (4-6)</h4>
-                                <p style="color:#555; margin-bottom:15px;">Interactive lessons with crafts and activities</p>
-                                <ul style="text-align:left; color:#555;">
-                                    <li>Bible story time</li>
-                                    <li>Creative crafts</li>
-                                    <li>Interactive games</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="age_group text-center" style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); height:100%;">
-                                <h4 style="color:#001f3f; font-size:20px; margin-bottom:15px;">Elementary (7-9)</h4>
-                                <p style="color:#555; margin-bottom:15px;">Deeper Bible exploration and character building</p>
-                                <ul style="text-align:left; color:#555;">
-                                    <li>Bible memory verses</li>
-                                    <li>Character lessons</li>
-                                    <li>Group discussions</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4">
-                            <div class="age_group text-center" style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); height:100%;">
-                                <h4 style="color:#001f3f; font-size:20px; margin-bottom:15px;">Pre-Teens (10-12)</h4>
-                                <p style="color:#555; margin-bottom:15px;">Building faith foundations for teenage years</p>
-                                <ul style="text-align:left; color:#555;">
-                                    <li>Bible application</li>
-                                    <li>Service projects</li>
-                                    <li>Leadership skills</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+           <!-- Age Groups Section -->
+<div class="row mt-5">
+    <div class="col-12">
+        <h3 class="text-center mb-4" style="color:#001f3f; font-size:28px; text-align:center;">Age Groups & Classes</h3>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="age_group text-center" style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); height:100%; text-align:center;">
+                    <h4 style="color:#001f3f; font-size:20px; margin-bottom:15px; text-align:center;">Nursery (0-3)</h4>
+                    <p style="color:#555; margin-bottom:15px; text-align:center;">Loving care with simple Bible stories and songs</p>
+                    <ul style="display:inline-block; text-align:left; color:#555;">
+                        <li>Supervised play</li>
+                        <li>Simple Bible songs</li>
+                        <li>Age-appropriate stories</li>
+                    </ul>
                 </div>
             </div>
+            <div class="col-md-3 mb-4">
+                <div class="age_group text-center" style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); height:100%; text-align:center;">
+                    <h4 style="color:#001f3f; font-size:20px; margin-bottom:15px; text-align:center;">Pre-School (4-6)</h4>
+                    <p style="color:#555; margin-bottom:15px; text-align:center;">Interactive lessons with crafts and activities</p>
+                    <ul style="display:inline-block; text-align:left; color:#555;">
+                        <li>Bible story time</li>
+                        <li>Creative crafts</li>
+                        <li>Interactive games</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="age_group text-center" style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); height:100%; text-align:center;">
+                    <h4 style="color:#001f3f; font-size:20px; margin-bottom:15px; text-align:center;">Elementary (7-9)</h4>
+                    <p style="color:#555; margin-bottom:15px; text-align:center;">Deeper Bible exploration and character building</p>
+                    <ul style="display:inline-block; text-align:left; color:#555;">
+                        <li>Bible memory verses</li>
+                        <li>Character lessons</li>
+                        <li>Group discussions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="age_group text-center" style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); height:100%; text-align:center;">
+                    <h4 style="color:#001f3f; font-size:20px; margin-bottom:15px; text-align:center;">Pre-Teens (10-12)</h4>
+                    <p style="color:#555; margin-bottom:15px; text-align:center;">Building faith foundations for teenage years</p>
+                    <ul style="display:inline-block; text-align:left; color:#555;">
+                        <li>Bible application</li>
+                        <li>Service projects</li>
+                        <li>Leadership skills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
             
             <!-- Schedule Section -->
             <div class="row mt-5">
@@ -636,7 +672,7 @@
                   onmouseout="this.style.transform='translateX(0)'; this.style.opacity='1';">
                 <div class="thumb" style="width:70px; height:70px; overflow:hidden; border-radius:8px; margin-right:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
                   <a href="events.html">
-                    <img src="/images/IMG 10.jpg" alt="" 
+                    <img src="images/IMG 10.jpg" alt="" 
                          style="width:100%; height:100%; object-fit:cover; border:2px solid #f1c40f; transition:transform 0.4s ease;"
                          onmouseover="this.style.transform='scale(1.15) rotate(2deg)';"
                          onmouseout="this.style.transform='scale(1) rotate(0)';">
@@ -657,7 +693,7 @@
                   onmouseout="this.style.transform='translateX(0)'; this.style.opacity='1';">
                 <div class="thumb" style="width:70px; height:70px; overflow:hidden; border-radius:8px; margin-right:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
                   <a href="activities.html">
-                    <img src="/images/IMG 24.jpg" alt="" 
+                    <img src="images/IMG 24.jpg" alt="" 
                          style="width:100%; height:100%; object-fit:cover; border:2px solid #f1c40f; transition:transform 0.4s ease;"
                          onmouseover="this.style.transform='scale(1.15) rotate(2deg)';"
                          onmouseout="this.style.transform='scale(1) rotate(0)';">
